@@ -1,0 +1,122 @@
+{
+    "designSystem": {
+      "name": "LandingPageXPAM",
+      "style": {
+        "colors": {
+          "primary": "#007BFF",
+          "secondary": "#2B2B2B",
+          "textLight": "#FFFFFF",
+          "textMuted": "#CCCCCC",
+          "divider": "#444444"
+        },
+        "typography": {
+          "heading": {
+            "font": "sans-serif",
+            "weight": "bold",
+            "color": "white"
+          },
+          "body": {
+            "font": "sans-serif",
+            "weight": "normal",
+            "color": "white"
+          },
+          "highlight": {
+            "font": "sans-serif",
+            "weight": "medium",
+            "color": "#007BFF"
+          }
+        },
+        "buttons": {
+          "primary": {
+            "background": "#007BFF",
+            "textColor": "#FFFFFF",
+            "textTransform": "uppercase",
+            "borderRadius": "4px",
+            "hover": "#339CFF"
+          }
+        }
+      },
+      "layout": {
+        "header": {
+          "position": "fixed",
+          "background": "dark",
+          "logo": "left",
+          "navLinks": "right",
+          "icons": ["search"]
+        },
+        "sections": [
+          {
+            "type": "hero",
+            "background": "image",
+            "textAlign": "left",
+            "content": ["headline", "subheading", "button"]
+          },
+          {
+            "type": "twoColumn",
+            "layout": "image-text",
+            "content": ["image", "title", "description"]
+          },
+          {
+            "type": "serviceDetails",
+            "background": "dark",
+            "columns": 2,
+            "content": ["title", "description"]
+          },
+          {
+            "type": "ctaBlock",
+            "align": "center",
+            "content": ["button"]
+          },
+          {
+            "type": "statsGrid",
+            "columns": 3,
+            "items": ["icon", "label", "value"]
+          },
+          {
+            "type": "contactBlock",
+            "background": "image",
+            "content": ["title", "address", "phone", "email", "tagline"]
+          },
+          {
+            "type": "footer",
+            "background": "dark",
+            "align": "center",
+            "content": ["copyright", "contactInfo", "socialIcon"]
+          }
+        ]
+      },
+      "responsive": {
+        "mobile": {
+          "navigation": "hamburgerMenu",
+          "twoColumn": "stacked",
+          "statsGrid": "1col",
+          "fontScale": "80%",
+          "buttons": "fullWidth"
+        }
+      },
+      "components": {
+        "HeroBanner": {
+          "elements": ["backgroundImage", "headline", "subheading", "ctaButton"]
+        },
+        "TwoColumnSection": {
+          "elements": ["image", "textBlock"]
+        },
+        "ServiceBox": {
+          "elements": ["title", "description"]
+        },
+        "CTAButton": {
+          "style": "primary"
+        },
+        "StatsGrid": {
+          "elements": ["icon", "title", "value"]
+        },
+        "ContactBlock": {
+          "elements": ["backgroundImage", "details"]
+        },
+        "Footer": {
+          "elements": ["smallText", "contact", "social"]
+        }
+      }
+    }
+  }
+  
