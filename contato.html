@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - XPAM Soluções</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <div class="logo-icon">XPAM</div>
+                    <div class="logo-text">INFINITAS SOLUÇÕES</div>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html#about">Sobre Nós</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                    <li><a href="#privacy">Política de Privacidade</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="contact-hero-background">
+            <div class="contact-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 class="contact-title">CONTATO</h1>
+                <p class="contact-subtitle">Entre em contato conosco para solicitar seu orçamento</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <div class="user-info">
+                        <div class="user-account">
+                            <i class="fas fa-user-circle"></i>
+                            <span>rodrigo2020eana@gmail.com</span>
+                            <a href="#" class="change-account">Mudar de conta</a>
+                        </div>
+                        <div class="form-status">
+                            <i class="fas fa-envelope"></i>
+                            <span>Não partilhado</span>
+                        </div>
+                    </div>
+                    <div class="required-info">
+                        <span class="required-asterisk">*</span>
+                        <span>Indica uma pergunta obrigatória</span>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <!-- Nome -->
+                    <div class="form-group">
+                        <label for="nome" class="form-label">
+                            Nome <span class="required">*</span>
+                        </label>
+                        <input type="text" id="nome" name="nome" class="form-input" placeholder="A sua resposta" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email" class="form-label">
+                            E-mail <span class="required">*</span>
+                        </label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="A sua resposta" required>
+                    </div>
+
+                    <!-- Telefone -->
+                    <div class="form-group">
+                        <label for="telefone" class="form-label">
+                            Número de telefone
+                        </label>
+                        <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="A sua resposta">
+                    </div>
+
+                    <!-- Radio Buttons -->
+                    <div class="form-group">
+                        <label class="form-label">Busco informações sobre</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="servico" value="painel-eletrico" class="radio-input">
+                                <span class="radio-custom"></span>
+                                <span class="radio-text">Painéis Elétricos</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="servico" value="manutencao-industrial" class="radio-input">
+                                <span class="radio-custom"></span>
+                                <span class="radio-text">Manutenção Industrial</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="servico" value="manutencao-laboratorial" class="radio-input">
+                                <span class="radio-custom"></span>
+                                <span class="radio-text">Manutenção Laboratorial</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="servico" value="nenhuma" class="radio-input">
+                                <span class="radio-custom"></span>
+                                <span class="radio-text">Nenhuma das anteriores</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Comentários -->
+                    <div class="form-group">
+                        <label for="comentarios" class="form-label">
+                            Comentários
+                        </label>
+                        <textarea id="comentarios" name="comentarios" class="form-textarea" placeholder="A sua resposta" rows="4"></textarea>
+                    </div>
+
+                    <!-- Botões -->
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar
+                        </button>
+                        <button type="button" class="clear-btn" id="clearForm">
+                            Limpar formulário
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Google Forms Disclaimer -->
+                <div class="form-disclaimer">
+                    <p class="disclaimer-text">
+                        <i class="fas fa-shield-alt"></i>
+                        Nunca envie palavras-passe através dos formulários.
+                    </p>
+                    <div class="google-forms-info">
+                        <div class="google-logo">
+                            <i class="fab fa-google"></i>
+                            <span>Formulários do Google</span>
+                        </div>
+                        <p>Este conteúdo não foi criado nem aprovado pela Google.</p>
+                        <button class="more-options">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Endereço</h3>
+                        <p>Índio Amanari, 37<br>Caucaia - CE</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Telefone</h3>
+                        <p>+55 85 2139-5270</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>E-mail</h3>
+                        <p>xpamsolucoes@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy;TODOS OS DIREITOS RESERVADOS-XPAM SOLUÇÕES</p>
+                </div>
+                <div class="footer-contact">
+                    <p>CONTATO</p>
+                    <p>(85) 21395270</p>
+                    <p>XPAMSOLUCOES@GMAIL.COM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
